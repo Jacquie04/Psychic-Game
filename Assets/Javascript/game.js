@@ -1,5 +1,5 @@
     // Creating variables to hold the number of wins, losses, and ties. They start at 0.
-    var maximum tries = 5;
+    var maximumTries = 5;
     var wins = 0;
     var losses = 0;
     var guesses = 0;
@@ -19,14 +19,13 @@
 
     }
 
-  
-     document.onkeyup = function(event) {
+  console.log("hi");
 
+     document.onkeyup = function(event) {
+            console.log("bye")
             var userGuess = event.key;
       
             var computerGuess = letters[Math.floor(Math.random() * letters.length)];
-
-            remainingLetters--;
 
 
     if (userGuess === computerGuess) {
